@@ -5,7 +5,7 @@
 		<classes>
 			<class name="maventutorial.maven_learning.day1Test" />
 			<class name="maventutorial.maven_learning.day2Test" />
-			<class name="cucumberOptions.TestRunner" />
+			<class name="maventutorial.maven_learning.day3Test" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
