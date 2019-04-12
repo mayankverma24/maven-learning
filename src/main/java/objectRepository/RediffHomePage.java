@@ -1,8 +1,9 @@
 package objectRepository;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class RediffHomePage {
 
@@ -10,11 +11,16 @@ public class RediffHomePage {
 
 	public RediffHomePage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
-	By Search = By.xpath("//input[@id='srchword']");
+	@FindBy(xpath = "//input[@id='srchword']")
+	WebElement search;
+
+	// By Search = By.xpath("//input[@id='srchword']");
 
 	public WebElement Searchbox() {
-		return driver.findElement(Search);
+		// return driver.findElement(Search);
+		return search;
 	}
 }
