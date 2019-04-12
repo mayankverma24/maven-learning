@@ -1,12 +1,13 @@
 package cucumberOptions;
 
-import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
+
+//@RunWith(Cucumber.class) //for junit
 @CucumberOptions(features = "src/test/java/features/Login.feature", glue = "stepDefinitions")
 
-public class TestRunner {
+//To run with TestNG have to extend the Test Runner class into another class can be copied from official documentation
+public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

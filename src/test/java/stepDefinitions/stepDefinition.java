@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
@@ -16,16 +15,22 @@ public class stepDefinition {
 		System.out.println("Navigated to Login page");
 	}
 
-	@When("^User login into application with username and password$")
-	public void user_login_into_application_with_username_and_password() throws Throwable {
-	}
+	@When("^User login into application with (.+) and password (.+)$")
+    public void user_login_into_application_with_and_password(String username, String password) throws Throwable {
+    	System.out.println(username);
+    	System.out.println(password);
+    }
 
 	@Then("^Home page is displayed$")
 	public void home_page_is_displayed() throws Throwable {
+		System.out.println("Home Page is displayed");
+
 	}
 
-	@And("^Cards are displayed$")
-	public void cards_are_displayed() throws Throwable {
+	@And("^Cards displayed are (.+)$")
+	public void cards_displayed_are(String result) throws Throwable {
+    	System.out.println(result);
+
 	}
 
 }
