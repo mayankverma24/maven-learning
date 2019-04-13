@@ -26,5 +26,6 @@ public class loginapp {
 
 		RediffHomePage rdh = new RediffHomePage(driver);
 		rdh.Searchbox().sendKeys("salman");
+		
 	}
 }

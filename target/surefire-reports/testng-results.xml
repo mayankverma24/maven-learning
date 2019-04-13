@@ -2,76 +2,76 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-12T22:49:09Z" name="Suite" finished-at="2019-04-12T22:49:09Z" duration-ms="36">
+  <suite started-at="2019-04-13T19:06:58Z" name="Suite" finished-at="2019-04-13T19:06:58Z" duration-ms="19">
     <groups>
       <group name="smoke">
-        <method signature="day3Test.af()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" name="af" class="maventutorial.maven_learning.day3Test"/>
-        <method signature="day3Test.test2()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" name="test2" class="maventutorial.maven_learning.day3Test"/>
+        <method signature="day3Test.af()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" name="af" class="maventutorial.maven_learning.day3Test"/>
+        <method signature="day3Test.test2()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" name="test2" class="maventutorial.maven_learning.day3Test"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2019-04-12T22:49:09Z" name="Test" finished-at="2019-04-12T22:49:09Z" duration-ms="36">
+    <test started-at="2019-04-13T19:06:58Z" name="Test" finished-at="2019-04-13T19:06:58Z" duration-ms="19">
       <class name="maventutorial.maven_learning.day1Test">
-        <test-method signature="carLoan()[pri:0, instance:maventutorial.maven_learning.day1Test@5aebe890]" started-at="2019-04-12T22:49:09Z" name="carLoan" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
+        <test-method signature="carLoan()[pri:0, instance:maventutorial.maven_learning.day1Test@6aaceffd]" started-at="2019-04-13T19:06:58Z" name="carLoan" finished-at="2019-04-13T19:06:58Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carLoan -->
-        <test-method signature="homeLoan()[pri:0, instance:maventutorial.maven_learning.day1Test@5aebe890]" started-at="2019-04-12T22:49:09Z" name="homeLoan" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
+        <test-method signature="homeLoan()[pri:0, instance:maventutorial.maven_learning.day1Test@6aaceffd]" started-at="2019-04-13T19:06:58Z" name="homeLoan" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLoan -->
       </class> <!-- maventutorial.maven_learning.day1Test -->
       <class name="maventutorial.maven_learning.day2Test">
-        <test-method signature="carLoan1()[pri:0, instance:maventutorial.maven_learning.day2Test@65d09a04]" started-at="2019-04-12T22:49:09Z" name="carLoan1" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
+        <test-method signature="carLoan()[pri:0, instance:maventutorial.maven_learning.day2Test@c86b9e3]" started-at="2019-04-13T19:06:58Z" name="carLoan" finished-at="2019-04-13T19:06:58Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- carLoan1 -->
-        <test-method signature="homeLoan1()[pri:0, instance:maventutorial.maven_learning.day2Test@65d09a04]" started-at="2019-04-12T22:49:09Z" name="homeLoan1" finished-at="2019-04-12T22:49:09Z" duration-ms="1" status="PASS">
+        </test-method> <!-- carLoan -->
+        <test-method signature="homeLoan()[pri:0, instance:maventutorial.maven_learning.day2Test@c86b9e3]" started-at="2019-04-13T19:06:58Z" name="homeLoan" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homeLoan1 -->
+        </test-method> <!-- homeLoan -->
       </class> <!-- maventutorial.maven_learning.day2Test -->
       <class name="maventutorial.maven_learning.day3Test">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="beforeSuite" finished-at="2019-04-12T22:49:09Z" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="beforeSuite" finished-at="2019-04-13T19:06:58Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="bfclass()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="bfclass" finished-at="2019-04-12T22:49:09Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="bfclass()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="bfclass" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bfclass -->
-        <test-method signature="af()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="af" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="bf" finished-at="2019-04-13T19:06:58Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bf -->
+        <test-method signature="af()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="af" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- af -->
-        <test-method is-config="true" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="bf" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bf -->
-        <test-method is-config="true" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="bf" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bf -->
-        <test-method signature="test2()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="test2" finished-at="2019-04-12T22:49:09Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="test3" finished-at="2019-04-12T22:49:09Z" duration-ms="1" status="PASS">
+        <test-method signature="test3()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="test3" finished-at="2019-04-13T19:06:58Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="bf" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="bf" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bf -->
-        <test-method is-config="true" signature="afclass()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="afclass" finished-at="2019-04-12T22:49:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="bf" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bf -->
+        <test-method signature="test2()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="test2" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="afclass()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="afclass" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afclass -->
-        <test-method is-config="true" signature="hjhj()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:09Z" name="hjhj" finished-at="2019-04-12T22:49:09Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="hjhj()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="hjhj" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hjhj -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:maventutorial.maven_learning.day3Test@4961f6af]" started-at="2019-04-12T22:49:10Z" name="afterSuite" finished-at="2019-04-12T22:49:10Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:maventutorial.maven_learning.day3Test@e4487af]" started-at="2019-04-13T19:06:58Z" name="afterSuite" finished-at="2019-04-13T19:06:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
