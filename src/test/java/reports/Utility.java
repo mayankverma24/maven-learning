@@ -29,7 +29,6 @@ public class Utility
 		{
 			System.out.println("Capture Failed "+e.getMessage());
 		}
-		/////hjghjghhjh
 		return path;
 	}
 	
