@@ -17,10 +17,17 @@ public class RediffHomePage {
 	@FindBy(xpath = "//input[@id='srchword']")
 	WebElement search;
 
+	@FindBy(xpath = "//input[@id='srchword']")
+	WebElement password;
+	
 	// By Search = By.xpath("//input[@id='srchword']");
 
 	public WebElement Searchbox() {
 		// return driver.findElement(Search);
 		return search;
+	}
+	
+	public WebElement Password() {
+		return password;
 	}
 }

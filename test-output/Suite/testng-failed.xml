@@ -3,13 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="cucumberOptions.TestRunner">
+      <class name="maventutorial.maven_learning.day3Test">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario"/>
-          <include name="tearDownClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="test3"/>
+          <include name="test2"/>
+          <include name="bfclass"/>
+          <include name="hjhj"/>
+          <include name="bf"/>
+          <include name="afclass"/>
         </methods>
-      </class> <!-- cucumberOptions.TestRunner -->
+      </class> <!-- maventutorial.maven_learning.day3Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

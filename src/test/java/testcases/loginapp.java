@@ -11,21 +11,21 @@ public class loginapp {
 
 	@Test
 	public void login() {
-		String username = System.getenv("USERNAME");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\" + username
-				+ "\\eclipse-workspace\\selenium-learning\\resources\\drivers\\chromedriver.exe");
+		//String username = System.getenv("USERNAME");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\mayan\\eclipse-workspace\\selenium-learning\\resources\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
-		RediffLoginPage rd = new RediffLoginPage(driver);
-
-		rd.Username().sendKeys("hello");
-		rd.Password().sendKeys("hrello");
-		rd.Submit().click();
-		rd.HomePage().click();
-
-		RediffHomePage rdh = new RediffHomePage(driver);
-		rdh.Searchbox().sendKeys("salman");
 		
+		RediffLoginPage LoginPageObject = new RediffLoginPage(driver);
+		RediffHomePage HomePageObject = new RediffHomePage(driver);
+
+		LoginPageObject.Username().sendKeys("hello");
+		LoginPageObject.Password().sendKeys("hrello");
+		LoginPageObject.Submit().click();
+		LoginPageObject.HomePage().click();
+		HomePageObject.Searchbox().sendKeys("salman");
+		//HomePageObject.Password().clear();
 	}
 }

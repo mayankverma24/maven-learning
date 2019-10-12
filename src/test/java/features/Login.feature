@@ -6,7 +6,7 @@ Scenario Outline: Home page default login
 	Then Home page is displayed 
 	And Cards displayed are <result> 
 	
-Examples:
-|username	|password	|result	|
-|ram		|12345		|true	|
-|shyam		|345678		|false	|
+	Examples: 
+		|username	|password	|result	|
+		|ram		|12345		|true	|
+		|shyam		|345678		|false	|

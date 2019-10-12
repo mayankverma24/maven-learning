@@ -1,5 +1,7 @@
 package maventutorial.maven_learning;
 
+import java.io.IOException;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -40,14 +42,17 @@ public class day3Test {
 		System.out.println("day3-This is Test 1" + ", Thread ID is " + Thread.currentThread().getId());
 	}
 
-	@Test(groups = { "smoke" })
-	public void test2() {
+	@Test(groups = { "smoke" }, expectedExceptions = { IOException.class, NullPointerException.class })
+	public void test2() throws Exception{
 		System.out.println("day3-This is Test 2" + ", Thread ID is " + Thread.currentThread().getId());
+		throw new Exception();
 	}
 
-	@Test
-	public void test3() {
+	@Test(expectedExceptions = { IOException.class })
+	public void test3() throws Exception{
 		System.out.println("day3-This is Test 3" + ", Thread ID is " + Thread.currentThread().getId());
+		throw new Exception();
+
 	}
 
 	@BeforeMethod

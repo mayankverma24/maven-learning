@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day3Test" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day3Test" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,22 +136,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day2Test" class="method navigator-link" hash-for-method="homeLoan">homeLoan</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day1Test" class="method navigator-link" hash-for-method="homeLoan">homeLoan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day3Test" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day3Test" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="maventutorial.maven_learning.day2Test" class="method navigator-link" hash-for-method="homeLoan">homeLoan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -147,6 +156,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">maventutorial.maven_learning.day3Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Expected exception of any of types [class java.io.IOException, class java.lang.NullPointerException] but got java.lang.Exception
+Caused by: java.lang.Exception
+	at maventutorial.maven_learning.day3Test.test2(day3Test.java:48)
+	... 23 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Expected exception of type class java.io.IOException but got java.lang.Exception
+Caused by: java.lang.Exception
+	at maventutorial.maven_learning.day3Test.test3(day3Test.java:54)
+	... 23 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -202,20 +247,6 @@
                   <a name="af">
                   </a> <!-- af -->
                   <span class="method-name">af</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test3">
-                  </a> <!-- test3 -->
-                  <span class="method-name">test3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,37 +320,37 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'carLoan')
-data.setCell(0, 2, 'maventutorial.maven_learning.day2Test')
+data.setCell(0, 2, 'maventutorial.maven_learning.day1Test')
 data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'carLoan')
-data.setCell(1, 2, 'maventutorial.maven_learning.day1Test')
+data.setCell(1, 1, 'af')
+data.setCell(1, 2, 'maventutorial.maven_learning.day3Test')
 data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test3')
-data.setCell(2, 2, 'maventutorial.maven_learning.day3Test')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'carLoan')
+data.setCell(2, 2, 'maventutorial.maven_learning.day2Test')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'homeLoan')
-data.setCell(3, 2, 'maventutorial.maven_learning.day2Test')
+data.setCell(3, 2, 'maventutorial.maven_learning.day1Test')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'homeLoan')
-data.setCell(4, 2, 'maventutorial.maven_learning.day1Test')
+data.setCell(4, 2, 'maventutorial.maven_learning.day2Test')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'af')
+data.setCell(5, 1, 'test2')
 data.setCell(5, 2, 'maventutorial.maven_learning.day3Test')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test2')
+data.setCell(6, 1, 'test3')
 data.setCell(6, 2, 'maventutorial.maven_learning.day3Test')
 data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 2 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -355,65 +386,69 @@ return data;
               <div class="chronological-class-name">maventutorial.maven_learning.day1Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">carLoan</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">80 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homeLoan</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">maventutorial.maven_learning.day2Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">carLoan</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">89 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homeLoan</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">maventutorial.maven_learning.day3Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">bfclass</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">91 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bf</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">af</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">bf</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test2</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">96 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">bf</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test3</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afclass</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">119 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">hjhj</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">120 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
