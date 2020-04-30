@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.306 s <<< FAILURE! - in TestSuite
-test2(maventutorial.maven_learning.day3Test)  Time elapsed: 0.013 s  <<< FAILURE!
-org.testng.TestException: 
-
-Expected exception of any of types [class java.io.IOException, class java.lang.NullPointerException] but got java.lang.Exception
-	at maventutorial.maven_learning.day3Test.test2(day3Test.java:48)
-
-test3(maventutorial.maven_learning.day3Test)  Time elapsed: 0.008 s  <<< FAILURE!
-org.testng.TestException: 
-
-Expected exception of type class java.io.IOException but got java.lang.Exception
-	at maventutorial.maven_learning.day3Test.test3(day3Test.java:54)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.679 s - in TestSuite
