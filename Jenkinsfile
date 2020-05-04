@@ -6,23 +6,12 @@ parameters {
     choice(choices: 'https://www.delta.com', description: 'Test Environment URL', name: 'myEnvironment');
     choice(choices: 'BrowserStack-SingleBrowser', description: 'Execute Tests via', name: 'myExecutionPlatform');
     choice(choices: 'Windows-10', description: 'Run tests on OS', name: 'myOS');
-    string(defaultValue: 'chrome', choices: 'chrome-70', description: 'Run tests on Browser', name: 'myBrowser');
     string(defaultValue: 'e2eBook', choices: 'e2eBook', description: 'Multiple Values can be passed by comma seperation', name: 'mySuite');
     string(defaultValue: '@booke2e', choices: '@booke2e', description: 'Run tests tagged as', name: 'myTags');
     booleanParam(name: 'notifyReportOnMSTeams', defaultValue: true, description: 'Enable this option default value to notify the report in Microsoft Teams');
     choice(choices: 'DotComAutomation.Delta@delta.com', description: 'Publish reports in email', name: 'myDefaultEmail');
     string(defaultValue: '', description: 'Run tests on Browser', name: 'EmailForBrowserStackCredential');
 };
-
-//Any OS - Browser Combo
-string tempBrowserName = myBrowser.toUpperCase();
-echo "Upper Case Browser Name ${tempBrowserName}";
-if (tempBrowserName == 'ANY' || tempBrowserName.contains('HEADLESS')) {
-    myOS = 'Linux';
-    myBrowser = 'Headless Chrome';
-    //echo "Random OS is: ${myOS}";
-    //echo "Random Browser is: ${myBrowser}";
-}
 
 if (params.myExecutionPlatform == 'Remote-Windows7') {
     myNode = 'OmniChannel_Win7';
