@@ -1,6 +1,3 @@
-import groovy.json.JsonBuilder;
-import java.util.Random;
-
 parameters {
     string(defaultValue: 'Delta.com UI Automation', description: 'Project Name', name: 'myProject');
     choice(choices: 'https://www.delta.com', description: 'Test Environment URL', name: 'myEnvironment');
@@ -15,14 +12,13 @@ parameters {
 
 node {
     timeout(time: 61, unit: 'MINUTES') {
-        wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'xterm']) {
             error = '';
             buildStatus = '';
 
             stage('CHECKOUT') {
                 STAGE_NAME = 'CHECKOUT';
                 try {
-                    checkout([$class: 'GitSCM', branches: scm.branches, extensions: scm.extensions, userRemoteConfigs: [[credentialsId: 'none', url: 'https://github.com/mayankverma24/maven-learning.git']]]);
+                    git 'https://github.com/mayankverma24/maven-learning.git';
                     colorCode = '#00FF00';
                     buildStatus = 'Success';
                 } catch (exc) {
@@ -62,4 +58,3 @@ node {
             };
          };
     };
-};
