@@ -1,56 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="693" started-at="2020-04-29T14:04:57Z" finished-at="2020-04-29T14:04:58Z">
+  <suite name="Default suite" duration-ms="9657" started-at="2020-05-01T19:38:04Z" finished-at="2020-05-01T19:38:14Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@72d818d1]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="693" started-at="2020-04-29T14:04:57Z" finished-at="2020-04-29T14:04:58Z">
-      <class name="cucumberOptions.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@72d818d1]" name="setUpClass" is-config="true" duration-ms="202" started-at="2020-04-29T14:04:57Z" finished-at="2020-04-29T14:04:58Z">
+    <test name="Default test" duration-ms="9657" started-at="2020-05-01T19:38:04Z" finished-at="2020-05-01T19:38:14Z">
+      <class name="maventutorial.maven_learning.AdvancedSearchPage">
+        <test-method status="PASS" signature="baseNavigationPage()[pri:0, instance:maventutorial.maven_learning.AdvancedSearchPage@4dfa3a9d]" name="baseNavigationPage" duration-ms="9622" started-at="2020-05-01T19:38:04Z" finished-at="2020-05-01T19:38:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@72d818d1]" name="runScenario" duration-ms="380" started-at="2020-04-29T14:04:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-29T14:04:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Home page default login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Application Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@72d818d1]" name="runScenario" duration-ms="3" started-at="2020-04-29T14:04:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-29T14:04:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Home page default login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Application Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@72d818d1]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2020-04-29T14:04:58Z" finished-at="2020-04-29T14:04:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumberOptions.TestRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- baseNavigationPage -->
+      </class> <!-- maventutorial.maven_learning.AdvancedSearchPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

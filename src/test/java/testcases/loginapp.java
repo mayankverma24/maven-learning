@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import objectRepository.RediffHomePage;
-import objectRepository.RediffLoginPage;
+import pageObjects.RediffHomePage;
+import pageObjects.RediffLoginPage;
 
 public class loginapp {
 

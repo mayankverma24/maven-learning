@@ -15,8 +15,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import objectRepository.RediffHomePage;
-import objectRepository.RediffLoginPage;
+import pageObjects.RediffHomePage;
+import pageObjects.RediffLoginPage;
 
 public class selenium {
 	public WebDriver driver;
