@@ -25,6 +25,7 @@
 								<suiteXmlFiles>
 									<suiteXmlFile>Smoke.xml</suiteXmlFile>
 								</suiteXmlFiles>
+								<goalPrefix>package</goalPrefix>
 							</configuration>
 						</plugin>
 					</plugins>
@@ -43,6 +44,7 @@
 							<configuration>
 								<suiteXmlFiles>
 									<suiteXmlFile>testng2.xml</suiteXmlFile>
+									<goalPrefix>package</goalPrefix>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
