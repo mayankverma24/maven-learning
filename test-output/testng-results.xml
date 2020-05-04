@@ -1,17 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9657" started-at="2020-05-01T19:38:04Z" finished-at="2020-05-01T19:38:14Z">
+  <suite name="Suite" duration-ms="46" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
     <groups>
+      <group name="smoke">
+        <method signature="day3Test.af()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="af" class="maventutorial.maven_learning.day3Test"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="9657" started-at="2020-05-01T19:38:04Z" finished-at="2020-05-01T19:38:14Z">
-      <class name="maventutorial.maven_learning.AdvancedSearchPage">
-        <test-method status="PASS" signature="baseNavigationPage()[pri:0, instance:maventutorial.maven_learning.AdvancedSearchPage@4dfa3a9d]" name="baseNavigationPage" duration-ms="9622" started-at="2020-05-01T19:38:04Z" finished-at="2020-05-01T19:38:14Z">
+    <test name="Test" duration-ms="46" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+      <class name="maventutorial.maven_learning.day1Test">
+        <test-method status="PASS" signature="carLoan()[pri:0, instance:maventutorial.maven_learning.day1Test@5f341870]" name="carLoan" duration-ms="5" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseNavigationPage -->
-      </class> <!-- maventutorial.maven_learning.AdvancedSearchPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- carLoan -->
+        <test-method status="PASS" signature="homeLoan()[pri:0, instance:maventutorial.maven_learning.day1Test@5f341870]" name="homeLoan" duration-ms="1" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan -->
+      </class> <!-- maventutorial.maven_learning.day1Test -->
+      <class name="maventutorial.maven_learning.day2Test">
+        <test-method status="PASS" signature="carLoan()[pri:0, instance:maventutorial.maven_learning.day2Test@553f17c]" name="carLoan" duration-ms="1" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carLoan -->
+        <test-method status="PASS" signature="homeLoan()[pri:0, instance:maventutorial.maven_learning.day2Test@553f17c]" name="homeLoan" duration-ms="1" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan -->
+      </class> <!-- maventutorial.maven_learning.day2Test -->
+      <class name="maventutorial.maven_learning.day3Test">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="beforeSuite" is-config="true" duration-ms="17" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="bfclass()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="bfclass" is-config="true" duration-ms="0" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfclass -->
+        <test-method status="PASS" signature="af()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="af" duration-ms="2" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- af -->
+        <test-method status="PASS" signature="bf()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="bf" is-config="true" duration-ms="0" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bf -->
+        <test-method status="PASS" signature="afclass()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="afclass" is-config="true" duration-ms="0" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afclass -->
+        <test-method status="PASS" signature="hjhj()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="hjhj" is-config="true" duration-ms="0" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hjhj -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:maventutorial.maven_learning.day3Test@14bf9759]" name="afterSuite" is-config="true" duration-ms="1" started-at="2020-05-04T18:26:41Z" finished-at="2020-05-04T18:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- maventutorial.maven_learning.day3Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
