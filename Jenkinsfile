@@ -13,28 +13,7 @@ parameters {
     string(defaultValue: '', description: 'Run tests on Browser', name: 'EmailForBrowserStackCredential');
 };
 
-if (params.myExecutionPlatform == 'Remote-Windows7') {
-    myNode = 'OmniChannel_Win7';
-} else if (params.myExecutionPlatform == 'Remote-Windows10') {
-    myNode = 'OmniChannel_Win10';
-} else if (params.myExecutionPlatform == 'Remote-OSXMojave') {
-    myNode = 'OmniChannel_MAC';
-} else {
-    myNode = 'OmniChannel_VM';
-};
-
-echo "My Node Identified for this job: ${myNode}";
-//Teams - Webhook URL:
-boolean notifyReportOnMSTeams = true;
-if (params.myEnvironment.contains('dvl')) {
-    myTeamsWebHookChannel = 'DVL';
-    myTeamsWebHookURL = 'https://outlook.office.com/';
-} else if (params.myEnvironment.contains('stg') || params.myEnvironment.contains('si')) {
-    myTeamsWebHookChannel = 'DVL';
-	myTeamsWebHookURL = 'https://outlook.office.com/';
-};
-
-node(myNode) {
+node {
     timeout(time: 61, unit: 'MINUTES') {
         wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'xterm']) {
             error = '';
@@ -56,13 +35,8 @@ node(myNode) {
             stage('BUILD') {
                 STAGE_NAME = 'BUILD';
                 try {
-                    if (myNode == 'OmniChannel_MAC' || myNode == 'OmniChannel_VM') {
-                        sh 'mvn clean'
-                        sh 'mvn build';
-                    } else {
                         bat 'mvn clean'
                         bat 'mvn build';
-                    };
                     colorCode = '#00FF00';
                     buildStatus = 'Success';
                 } catch (exc) {
