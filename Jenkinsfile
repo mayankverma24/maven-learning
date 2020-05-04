@@ -1,13 +1,6 @@
 parameters {
-    string(defaultValue: 'Delta.com UI Automation', description: 'Project Name', name: 'myProject');
-    choice(choices: 'https://www.delta.com', description: 'Test Environment URL', name: 'myEnvironment');
-    choice(choices: 'BrowserStack-SingleBrowser', description: 'Execute Tests via', name: 'myExecutionPlatform');
-    choice(choices: 'Windows-10', description: 'Run tests on OS', name: 'myOS');
-    string(defaultValue: 'e2eBook', choices: 'e2eBook', description: 'Multiple Values can be passed by comma seperation', name: 'mySuite');
-    string(defaultValue: '@booke2e', choices: '@booke2e', description: 'Run tests tagged as', name: 'myTags');
-    booleanParam(name: 'notifyReportOnMSTeams', defaultValue: true, description: 'Enable this option default value to notify the report in Microsoft Teams');
-    choice(choices: 'DotComAutomation.Delta@delta.com', description: 'Publish reports in email', name: 'myDefaultEmail');
-    string(defaultValue: '', description: 'Run tests on Browser', name: 'EmailForBrowserStackCredential');
+    string(defaultValue: 'My Sample Project', description: 'Project Name', name: 'myProject');
+    choice(choices: 'https://github.com/mayankverma24/maven-learning.git', description: 'Git Repository', name: 'myGitRepo');
 };
 
 node {
@@ -18,7 +11,7 @@ node {
             stage('CHECKOUT') {
                 STAGE_NAME = 'CHECKOUT';
                 try {
-                    git 'https://github.com/mayankverma24/maven-learning.git';
+                    git myGitRepo;
                     colorCode = '#00FF00';
                     buildStatus = 'Success';
                 } catch (exc) {
