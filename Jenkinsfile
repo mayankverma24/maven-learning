@@ -1,6 +1,7 @@
 parameters {
     string(defaultValue: 'My Sample Project', description: 'Project Name', name: 'myProject');
     choice(choices: 'https://github.com/mayankverma24/maven-learning.git', description: 'Git Repository', name: 'myGitRepo');
+    choice(choices: 'mvn test -PSmoke', description: 'Testing Profile to be run', name: 'profile');
 };
 
 node {
@@ -38,7 +39,7 @@ node {
             stage('TEST') {
                 STAGE_NAME = 'TEST';
 				try {
-					bat 'mvn test -PSmoke';
+					bat profile;
                     colorCode = '#00FF00';
                     buildStatus = 'Success';
                     testStatus = 'Success';
