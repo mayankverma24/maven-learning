@@ -3,6 +3,7 @@ package maventutorial.maven_learning;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -30,15 +31,16 @@ public class dataDrivenTest {
 				int column = 0;
 				while (ce.hasNext()) {
 					Cell value = ce.next();
-					if (value.getStringCellValue().equalsIgnoreCase("Data2")) {
+					if (value.getStringCellValue().equalsIgnoreCase("Data1")) {
 						column = k;
 
 					}
 					k++;
+					System.out.println(value);
 				}
 				System.out.println(column);
 			} else {
-				System.out.println(workbook.getSheetName(i));
+				//System.out.println(workbook.getSheetName(i));
 			}
 			workbook.close();
 		}

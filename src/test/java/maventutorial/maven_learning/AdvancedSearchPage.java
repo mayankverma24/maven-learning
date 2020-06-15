@@ -1,6 +1,8 @@
 package maventutorial.maven_learning;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Set;
 
 import org.testng.annotations.Test;
 
@@ -14,6 +16,7 @@ public class AdvancedSearchPage extends base {
 		pageObjects.AdvancedSearchPageObject ASPPageObject = new pageObjects.AdvancedSearchPageObject(driver);
 		ASPPageObject.getLogin().click();
 		driver.quit();
+		Set<String> win = driver.getWindowHandles();
 	}
 
 }

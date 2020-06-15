@@ -5,7 +5,6 @@ Scenario Outline: Home page default login
 	When User login into application with <username> and password <password> 
 	Then Home page is displayed 
 	And Cards displayed are <result> 
-	
 	Examples: 
 		|username	|password	|result	|
 		|ram		|12345		|true	|
